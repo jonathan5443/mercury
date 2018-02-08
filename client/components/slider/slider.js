@@ -17,7 +17,7 @@ class Slider extends Component {
         <div className="item">
           <div className="row">
             <div className="col-9">
-              <img src="https://dummyimage.com/800x500/e6e6e6" />
+              <img clasname="people" src={require("../../images/people3.jpg")}/>
             </div>
             <div className="col-3">
               <p>
@@ -32,7 +32,7 @@ class Slider extends Component {
         <div className="item">
           <div className="row">
             <div className="col-9">
-              <img src="https://dummyimage.com/800x500/e6e6e6" />
+              <img clasname="people" src={require("../../images/people2.jpg")}/>
             </div>
             <div className="col-3">
               <p>
@@ -47,7 +47,7 @@ class Slider extends Component {
         <div className="item">
           <div className="row">
             <div className="col-9">
-              <img src="https://dummyimage.com/800x500/e6e6e6" />
+              <img clasname="people" src={require("../../images/people.jpg")}/>
             </div>
             <div className="col-3">
               <p>

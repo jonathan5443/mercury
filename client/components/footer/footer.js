@@ -1,32 +1,80 @@
 import React, { Component } from "react";
-
 class Footer extends Component {
   render() {
     return (
       <footer>
         <div className="container">
+
           <div className="col-3">
-            <h3>Atencion al usuario</h3>
-            <p>01800050004</p>
-            <p><span>Directorio de contactos</span></p>
-            <p>info@alcaldia.com</p>
+            <h3>ATENCIÓN AL USUARIO</h3>
+            <div className = "phone">
+              <div className="col-2">
+                <img className="image_footer" src={require("../../images/phone.png")}/>
+              </div>
+              <div className="col-10">
+                <p>01800050004</p>
+                <span>DIRECTORIO DE CONTACTOS ></span>
+              </div>
+            </div>
+
+            <div className= "second_row">
+              <div className="col-2">
+                <img className="image_footer" src={require("../../images/mail.png")}/>
+              </div>
+              <div className="col-10">
+                <span> </span>
+                <p>info@alcaldia.com</p>
+              </div>
+            </div>
           </div>
+
           <div className="col-3">
-            <h3>Horario de atencion</h3>
-            <p>Lunes a viernes</p>
-            <p>07:00 - 16:00</p>
-            <p><span>Ultima actualizacion</span></p>
-            <p>Diciembre 1 de 2017</p>
+            <h3>HORARIO DE ATENCIÓN</h3>
+            <div className="Clock">
+              <div className="col-2">
+                <img className="image_footer" src={require("../../images/clock.png")}/>
+              </div>
+              <div className="col-10">
+                <p>LUNES A VIERNES</p>
+                <p>07:00 - 16:00</p>
+              </div>
+            </div>
+
+            <div className="second_row">
+              <div className="col-2">
+                 <img className="image_footer" src={require("../../images/calendar.png")}/>
+              </div>
+              <div className="col-10">
+                <span>ÚLTIMA ACTUALIZACIÓN</span>
+                <p>NOVIEMBRE 1 de 2017</p>
+              </div>
+            </div>
           </div>
+
           <div className="col-3">
-            <h3>Direccion</h3>
-            <p>Calle 10 NO 38-00</p>
-            <p>PBX: 377 0850</p>
-            <p><span>NO. de visitas</span></p>
-            <p>11.793.882</p>
+            <h3>DIRECCIÓN</h3>
+            <div className="location">
+              <div className="col-2">
+                <img className="image_footer" src={require("../../images/location_icon.png")}/>
+              </div>
+              <div className="col-10">
+                <p>CALLE 10 N0. 38-00</p>
+                <p>PBX: 377 0850</p>
+              </div>
+            </div> 
+            <div className ="second_row">
+              <div className="col-2">
+                <img className="image_footer" src={require("../../images/person.png")}/>
+              </div>
+              <div className="col-10">
+                <span>NO. DE VISITAS</span>
+                <p>11.793.892</p>
+              </div>
+            </div>  
           </div>
+
           <div className="col-3">
-            <img src="https://dummyimage.com/250x200/e6e6e6" alt="map" />
+            <img className="map" src={require("../../images/mapa.png")}/>
           </div>
         </div>
       </footer>

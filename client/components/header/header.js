@@ -15,13 +15,13 @@ class Header extends Component {
                 <a href="">Nuestro alcalde</a>
               </li>
               <li>
-                <a href="">Registrate</a>
+                <a href="">Regístrate</a>
               </li>
               <li>
                 <a href="">Idioma</a>
               </li>
               <li>
-                <a href="">Inicia sesion</a>
+                <a href="">Inicia sesión</a>
               </li>
             </ul>
           </div>
@@ -29,33 +29,31 @@ class Header extends Component {
         <div className="row">
           <NavLink exact to="/" className="logo col-7">
             <div className="row">
-              <div className="col-3">
-               <img src="https://dummyimage.com/100/e6e6e6" alt="map" />
+              <div className="col-2">
+                <img className="escudo" src={require("../../images/escudo.png")}/>
               </div>
-              <div className="col-9">
-                <h1>
-                  Alcaldia municipal
-                  <span> Tocaima</span>
-                </h1>
+              <div className="col-10">
+                <h1>Alcaldia Municipal</h1>
+                <span>Tocaima</span>
               </div>
             </div>
           </NavLink>
           <div className="social col-5">
             <div className="row networks">
               <div className="col-6">
-                <img src="https://dummyimage.com/50/e6e6e6" alt="map" />
+                <img className="youtube" src={require("../../images/youtube.png")}/>
               </div>
               <div className="col-6">
-                <img src="https://dummyimage.com/50/e6e6e6" alt="map" />
+                <img className="instagram" src={require("../../images/instagram.png")}/>
               </div>
               <div className="col-6">
-                <img src="https://dummyimage.com/50/e6e6e6" alt="map" />
+                <img className="facebook" src={require("../../images/facebook.png")}/>
               </div>
               <div className="col-6">
-                <img src="https://dummyimage.com/50/e6e6e6" alt="map" />
+                <img className="twitter" src={require("../../images/twitter.png")}/>
               </div>
             </div>
-            <img src="https://dummyimage.com/260X145/e6e6e6" className="city-photo" alt="map" />
+            <img className="city_photo" src={require("../../images/tocaima.png")}/>
           </div>
         </div>
       </header>
