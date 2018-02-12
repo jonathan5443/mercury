@@ -10,6 +10,7 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",

@@ -11,12 +11,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 render(
   <BrowserRouter>
-    <App>
-      <Route exact path="/" component={Home} />
-      <Route path="/gallery" component={Gallery} />
-      <Route path="/news" component={News} />
-
-    </App>
+    <Route exact path="/:page?/" component={App} />
   </BrowserRouter>,
   document.getElementById("root")
 );

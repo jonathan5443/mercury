@@ -1,20 +1,21 @@
 
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
+
+  constructor(props) {
+    super(props);
+   }
+   
   render() {
     return (
       <nav className="container">
         <div className="row">
           <div className="TabBar col-12">
             <ul>
-              <li><NavLink  exact activeClassName="active" to="/">Nuestra alcaldia</NavLink></li>
-              <li><NavLink activeClassName="active" to="/gallery">Tramites y servicios</NavLink></li>
-              <li><NavLink activeClassName="active" to="/news">Planeación</NavLink></li>
-              <li><NavLink activeClassName="active" to="#">Presupuesto y finanzas</NavLink></li>
-              <li><NavLink activeClassName="active" to="#">Participación</NavLink></li>
-              <li><NavLink activeClassName="active" to="#">Atencion a la ciudadania</NavLink></li>
+              {Object.keys(this.props.data).length > 0 && this.props.data._embedded["main-menu-nodes"].map((item) =>
+                <li key={item["id-node"]} onClick={()=> this.props.changePage(item["id-node"])}><span>{item.name}</span></li>
+              )}
             </ul>
           </div>
         </div>
