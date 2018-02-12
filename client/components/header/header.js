@@ -5,8 +5,8 @@ class Header extends Component {
   render() {
     return (
       <header className="container">
-        <div className="row">
-          <div className="top-bar col-12">
+        <div className="top-bar row">
+          <div className=" col-8">
             <ul>
               <li>
                 <a href="">Transparencia</a>
@@ -25,9 +25,23 @@ class Header extends Component {
               </li>
             </ul>
           </div>
+
+          <div className ="search col-4">
+            <div className="row">
+              <div className="col-10">
+                <input type="text" className="search_text" placeholder="Buscar contenido."/>
+              </div>
+              <div className="col-2">
+                <img className="search_icon" src={require("../../images/search.png")}/>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+
         <div className="row">
-          <NavLink exact to="/" className="logo col-7">
+          <NavLink exact to="/" className="logo col-6">
             <div className="row">
               <div className="col-2">
                 <img className="escudo" src={require("../../images/escudo.png")}/>
@@ -38,6 +52,9 @@ class Header extends Component {
               </div>
             </div>
           </NavLink>
+          <div className="colombia col-1">
+            <img className="colombia" src={require("../../images/colombia.png")}/>
+          </div>
           <div className="social col-5">
             <div className="row networks">
               <div className="col-6">

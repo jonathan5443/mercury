@@ -59,6 +59,7 @@ class NewsList extends Component {
       <div className="news-list">
         {news.map(item => 
           <a href="#" className="col-3 news-item">
+            <p className="news_title">{item.tag}</p>
             <img src={item.image} />
             <p>{item.title}</p>
           </a>
