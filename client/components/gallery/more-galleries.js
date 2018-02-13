@@ -12,19 +12,19 @@ class MoreGalleries extends Component {
         margin={10}
       >
         <a href="#" className="item">
-          <img src="https://dummyimage.com/200x150/e6e6e6" />
+          <img clasname="photo" src={require("../../images/photo1.jpg")}/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </a>
         <a href="#" className="item">
-          <img src="https://dummyimage.com/200X150/e6e6e6" />
+          <img clasname="photo" src={require("../../images/photo2.jpg")}/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </a>
         <a href="#" className="item">
-          <img src="https://dummyimage.com/200X150/e6e6e6" />
+          <img clasname="photo" src={require("../../images/photo1.jpg")}/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </a>
         <a href="#" className="item">
-          <img src="https://dummyimage.com/200X150/e6e6e6" />
+          <img clasname="photo" src={require("../../images/photo2.jpg")}/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </a>
       </OwlCarousel>
