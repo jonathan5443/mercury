@@ -56,7 +56,7 @@ export default class App extends React.Component {
     return (
       <div className="mainWrapper">
         <Header data={this.state.data} />
-        <NavBar data={this.state.data} changePage={this.changePage} />
+        <NavBar data={this.state.data} changePage={this.changePage} currentPage={this.props.match.params.page}/>
         <div className="container contentWrapper">
           <div className="row">
             <Breadcrumb changePage={this.changePage} data={this.state.data} />

@@ -8,13 +8,14 @@ class NavBar extends Component {
    }
    
   render() {
+    console.log(this.props)
     return (
       <nav className="container">
         <div className="row">
           <div className="TabBar col-12">
             <ul>
               {Object.keys(this.props.data).length > 0 && this.props.data._embedded["main-menu-nodes"].map((item) =>
-                <li key={item["id-node"]} onClick={()=> this.props.changePage(item["id-node"])}><span>{item.name}</span></li>
+                <li className={item["id-node"] == this.props.currentPage ? "active" : ""} key={item["id-node"]} onClick={()=> this.props.changePage(item["id-node"])}><span>{item.name}</span></li>
               )}
             </ul>
           </div>
