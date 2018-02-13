@@ -4,7 +4,6 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container">
-
           <div className="col-3">
             <h3>ATENCIÓN AL USUARIO</h3>
             <div className = "phone">
@@ -12,7 +11,7 @@ class Footer extends Component {
                 <img className="image_footer" src={require("../../images/phone.png")}/>
               </div>
               <div className="col-10">
-                <p>01800050004</p>
+                <p>222</p>
                 <span>DIRECTORIO DE CONTACTOS ></span>
               </div>
             </div>

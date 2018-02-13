@@ -55,7 +55,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="mainWrapper">
-        <Header />
+        <Header data={this.state.data} />
         <NavBar data={this.state.data} changePage={this.changePage} />
         <div className="container contentWrapper">
           <div className="row">
@@ -63,7 +63,7 @@ export default class App extends React.Component {
             <Page endpoint={this.endpoint} data={this.state.data} changePage={this.changePage} />
           </div>
         </div>
-        <Footer />
+        <Footer data={this.state.data} />
       </div>
     );
   }

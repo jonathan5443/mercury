@@ -13,8 +13,13 @@ class Breadcrumb extends Component {
         <div className="row">
           <div className="breadcrumb col-12">
             <ul>
-              {Object.keys(this.props.data).length > 0 && this.props.data._embedded["breadcrumbs-nodes"].slice(0).reverse().map((breadcrumb) =>
-                <li key={breadcrumb._links.self["name"]} onClick={() => this.props.changePage(breadcrumb._links.self["name"])} ><span>{breadcrumb._links.self["title"]}</span></li>
+              {Object.keys(this.props.data).length > 0 && this.props.data._embedded["breadcrumbs-nodes"].slice(0).reverse().map((breadcrumb, index) =>
+                <li key={breadcrumb._links.self["name"]} onClick={() => this.props.changePage(breadcrumb._links.self["name"])} >
+                  <span>{breadcrumb._links.self["title"]}</span>
+                  {index + 1 !== this.props.data._embedded["breadcrumbs-nodes"].length &&
+                    <span className="separator"> >> </span>
+                  }
+                </li>
               )}
             </ul>
           </div>
