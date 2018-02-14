@@ -5,7 +5,6 @@ class Header extends Component {
     super(props);
   }
   render() {
-    console.log(this.props.color);
     return (
       <header className="container">
         <div className="top-bar row">

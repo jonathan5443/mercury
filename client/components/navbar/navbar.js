@@ -8,7 +8,6 @@ class NavBar extends Component {
    }
    
   render() {
-    console.log(this.props)
     return (
       <nav className="container">
         <div className="row">
